@@ -1,0 +1,29 @@
+%h1 Listing categories
+
+%table
+  %tr
+    %th Name
+    %th Group
+    %th Parent
+    %th Lft
+    %th Rgt
+    %th
+    %th
+    %th
+
+  - @categories.each do |category|
+    %tr
+      %td= category.name
+      %td= category.group_id
+      %td= category.parent_id
+      %td= category.lft
+      %td= category.rgt
+      %td= link_to 'Show', category
+      %td= link_to 'Edit', edit_category_path(category)
+      %td= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'Reorder', reorder_categories_path(:group_id => @group.id)
+\|
+= link_to 'New Category', new_category_path(:group_id => @group.id)

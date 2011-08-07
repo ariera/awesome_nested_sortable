@@ -1,0 +1,8 @@
+%h2= "reordering #{@group.name} categories"
+
+#sortable
+    = nested_list @categories.roots do |category|
+        %p= "#{category.name}(#{category.id})"
+
+    = form_tag reorder_categories_path(:group_id => @group.id) do
+        = submit_tag 'save'

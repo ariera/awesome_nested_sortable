@@ -1,4 +1,14 @@
 AwesomeNestedSortable::Application.routes.draw do
+  root :to => 'groups#index'
+  resources :categories do
+    collection do
+      get 'reorder'
+      post 'reorder'
+    end
+  end
+
+  resources :groups
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

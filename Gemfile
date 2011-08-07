@@ -12,7 +12,7 @@ gem 'uglifier'
 gem 'jquery-rails'
 gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
 
-gem 'formtastic', '2.0.0.rc3'
+gem 'awesome_nested_set'
 
 group :test, :development do
   gem 'launchy'

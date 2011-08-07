@@ -1,0 +1,18 @@
+@mixin h-list-container {
+  @include reset-box-model;
+  @include clearfix; }
+
+@mixin h-list-item($margin: 5px) {
+  @include no-bullet;
+  white-space: nowrap;
+  float:left;
+  @if $margin {
+    margin-left:$margin;
+    &:first-child, &.first {
+      margin-left: 0; }
+ } }
+
+@mixin h-list($margin: 5px) {
+  @include h-list-container;
+  > li {
+    @include h-list-item($margin); } }

@@ -12,7 +12,6 @@
   %body{:id=>"#{params[:controller].parameterize}_controller", :class=>"#{params[:action].parameterize}_action"}
     #wrapper
       #main.clearfix
-        = render "shared/nav_bar"
         %p.notice= notice
         %p.alert= alert
         = yield

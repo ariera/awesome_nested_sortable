@@ -1,0 +1,11 @@
+%h1= "#{@group.name} group"
+- if @group.categories.present?
+    %h2 categories:
+    =nested_list(@group.categories.roots) do |cat|
+        = cat.name
+
+= link_to 'Manage Categories', reorder_categories_path(:group_id=>@group.id)
+\|
+= link_to 'Edit', edit_group_path(@group)
+\|
+= link_to 'Back', groups_path

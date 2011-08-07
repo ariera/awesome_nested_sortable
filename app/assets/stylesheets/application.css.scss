@@ -18,11 +18,8 @@ ul{@include no-bullet;}
 @import "compass/utilities/general/clearfix";
 @import "compass/typography/lists/horizontal-list";
 
-    
 @import "custom-mixins";
 
-@import "formtastic";
-@import "css3-github-buttons.css";
-
-@import "hablamlo.css.scss";
+@import "awesome_nested_sortable.css.scss";
+@import "scaffolds.css.scss";
 
