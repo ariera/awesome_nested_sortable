@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title Orly
+    = csrf_meta_tag
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+    = yield :javascripts
+    /[if IE 7]
+      = stylesheet_link_tag 'ie7'
+
+  %body{:id=>"#{params[:controller].parameterize}_controller", :class=>"#{params[:action].parameterize}_action"}
+    #wrapper
+      #main.clearfix
+        = render "shared/nav_bar"
+        %p.notice= notice
+        %p.alert= alert
+        = yield

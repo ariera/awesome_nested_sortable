@@ -1,0 +1,34 @@
+body {
+    background-color:#F3F3F3;
+}
+
+#wrapper{
+    border-right:1px solid #E1E1E1;
+    border-bottom:1px solid #CCC;
+    margin: 20px auto;
+    width: 960px;
+}
+
+#main {
+    border:1px solid #EEE;
+    background-color:#FFF;
+    padding:20px;
+}
+
+#nav_bar{
+    @include pie-clearfix;
+}
+
+ul#main_nav{
+    float:left;
+    @include h-list;
+}
+
+ul#log_bar{
+    float:right;
+    @include h-list;
+}
+
+ul.profiles {
+    @include h-list;
+}
