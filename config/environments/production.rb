@@ -1,4 +1,8 @@
 AwesomeNestedSortable::Application.configure do
+  #heroku and rails 3.1
+  #http://quickleft.com/blog/rails-31-sprockets-and-heroku
+  config.serve_static_assets = true
+  
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
