@@ -4,9 +4,4 @@
 #require 'rake/dsl_definition'
 require File.expand_path('../config/application', __FILE__)
 
-module ::AwesomeNestedSortable
-  class Application
-    include Rake::DSL
-  end
-end
 AwesomeNestedSortable::Application.load_tasks
