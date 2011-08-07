@@ -6,5 +6,5 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-group=Group.create(:name => 'awesome')
+group=Group.create(:name => 'example')
 10.times {|i| Category.create(:name => "cat_#{i}", :group_id => group.id)}
