@@ -4,6 +4,7 @@
     =nested_list(@group.categories.roots) do |cat|
         = cat.name
         = link_to 'edit', edit_category_path(cat)
+        = link_to 'destroy', cat, :confirm => 'Are you sure?', :method => :delete
 
 = link_to 'Manage Categories', reorder_categories_path(:group_id=>@group.id)
 \|

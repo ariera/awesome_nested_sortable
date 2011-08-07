@@ -15,15 +15,7 @@ gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :branch =
 gem 'awesome_nested_set'
 
 group :test, :development do
-  gem 'launchy'
-  gem 'database_cleaner'
-  gem "rspec-rails", "~> 2.4"
-  gem 'watchr'
-  gem "fuubar"
-  gem 'spork', '~> 0.9.0.rc'
   gem 'ruby-debug19', :require => 'ruby-debug'
-  gem "capybara"
-  gem 'factory_girl_rails'
 end
 
 group :test do
